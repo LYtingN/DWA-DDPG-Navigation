@@ -1,0 +1,36 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+  <model name='cylinder_bin'>
+    <pose>0 0 0 0 0 0</pose>
+    <link name='cylinder_bin'>
+      <collision name='cylinder_bin_collision'>
+        <pose>0 0 0.1 0 0 0</pose>
+        <geometry>
+          <cylinder>
+              <radius>0.08</radius>
+              <length>0.2</length>
+            </cylinder>
+        </geometry>
+      </collision>
+      <visual name='cylinder_bin_visual'>
+        <pose>0 0 0.1 0 0 0</pose>
+        <geometry>
+          <cylinder>
+              <radius>0.1</radius>
+              <length>0.2</length>
+            </cylinder>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Turquoise</name>
+          </script>
+          <ambient>1 1 1 1</ambient>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+    </link>
+  </model>
+</sdf>

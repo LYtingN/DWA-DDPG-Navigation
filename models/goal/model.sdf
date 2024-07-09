@@ -1,0 +1,36 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+  <model name='goal'>
+    <pose>0 0 0 0 0 0</pose>
+    <link name='goal'>
+      <collision name='goal_collision'>
+        <pose>0 0 0.0001 0 0 0</pose>
+        <geometry>
+          <cylinder>
+              <radius>0.0001</radius>
+              <length>0.0002</length>
+            </cylinder>
+        </geometry>
+      </collision>
+      <visual name='goal_visual'>
+        <pose>0 0 0.0001 0 0 0</pose>
+        <geometry>
+          <cylinder>
+              <radius>0.08</radius>
+              <length>0.0002</length>
+            </cylinder>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/RedTransparentOverlay</name>
+          </script>
+          <ambient>1 1 1 1</ambient>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+    </link>
+  </model>
+</sdf>
